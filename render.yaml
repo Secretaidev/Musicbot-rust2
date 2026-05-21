@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: secret-music-bot
+    env: docker
+    plan: free
+    envVars:
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: SESSION_STRING
+        sync: false
+      - key: MONGO_URI
+        sync: false
+      - key: LOG_CHANNEL_ID
+        sync: false
+      - key: OWNER_ID
+        sync: false
